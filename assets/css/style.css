@@ -1,0 +1,93 @@
+body {
+  background: #f1efff;
+}
+* {
+  font-family: Heveltica Neue, Helvetica, Arial;
+  font-weight: 400;
+  cursor: default;
+}
+#main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+#title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #7159c1;
+}
+#scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#player, #cpu {
+  position: relative;
+  flex-grow: 1;
+  height: 200px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+}
+#player {
+  background-color: #7159c1;
+}
+#cpu {
+  background-color: #af9ee6;
+}
+#player h2, #cpu h2 {
+  margin: 0;
+  padding: 0;
+}
+#player-name, #cpu-name {
+  font-size: 24px;
+}
+#cpu-name {
+  text-align: right;
+}
+#player-points, #cpu-points {
+  position: absolute;
+  top: 8px;
+  font-size: 52px;
+}
+#player-points {
+  right: 20px;
+}
+#cpu-points {
+  left: 20px;
+}
+#player-choice, #cpu-choice {
+  list-style: none;
+  text-align: center;
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+#player-choice li, #cpu-choice li {
+  display: inline;
+  padding: 0 15px;
+}
+#player-choice a, #cpu-choice a {
+  opacity: 0.2;
+}
+#player-choice a:hover, #player-choice a.selected, #cpu-choice a.selected {
+  opacity: 1;
+}
+#player-choice img, #cpu-choice img {
+  max-width: 80px;
+  cursor: pointer;
+}
+#versus {
+  background:#f1efff;
+  font-size: 50px;
+  padding: 0 5px;
+}
+#message {
+  clear: both;
+  border-radius: 5px;
+  background-color: #ddd5f8;
+  color: #4b4b4b;
+  margin: 20px 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}

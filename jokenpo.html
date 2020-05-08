@@ -1,0 +1,58 @@
+<!--
+  Jokenpô Game (🤘🏽 Rock, 📃 Paper and ✂️ Scissors)
+  by: Paulo Vieira - https://github.com/paulorcvieira/jokenpo-game
+
+  Rules:
+
+  - 📃 Paper wraps the stone
+  - 🤘🏽 Stone breaks the scissors
+  - ✂️ Scissors cuts the paper
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jokenpô - Game</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="main">
+    <h1 id="title">🤘🏽 Rock, 📃 Paper and ✂️ Scissors</h1>
+
+    <div id="scoreboard">
+      <div id="player">
+        <h2 id="player-name"></h2>
+        <span id="player-points"></span>
+        <ul id="player-choice">
+          <li>
+            <a id="player-choice-1"><img src="img/rock.png" alt="rock"></a>
+            <a id="player-choice-2"><img src="img/paper.png" alt="paper"></a>
+            <a id="player-choice-3"><img src="img/scissors.png" alt="scissors"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="versus">
+        VS
+      </div>
+
+      <div id="cpu">
+        <h2 id="cpu-name"></h2>
+        <span id="cpu-points"></span>
+        <ul id="cpu-choice">
+          <li>
+            <a id="cpu-choice-1"><img src="img/rock.png" alt="rock"></a>
+            <a id="cpu-choice-2"><img src="img/paper.png" alt="paper"></a>
+            <a id="cpu-choice-3"><img src="img/scissors.png" alt="scissors"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="message"></div>
+  </div>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
